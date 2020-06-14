@@ -1,15 +1,15 @@
 import Vue from "vue";
-import { Button } from "ant-design-vue";
+import './core/lazy_use'
 
 import App from "./App.vue";
 import router from "./router";
 import store from "./store";
-import { VueAxios } from './utils/request'
+// import { VueAxios } from './utils/request'
+import './global.less'
 
 Vue.config.productionTip = false;
 
-Vue.use(Button);
-Vue.use(VueAxios);
+// Vue.use(VueAxios);
 setTimeout(() => {
 	new Vue({
 		router,
